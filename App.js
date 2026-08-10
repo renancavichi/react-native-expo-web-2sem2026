@@ -11,7 +11,38 @@ export default function App() {
         />
         <Text>Meu App</Text>
       </View>
-      <View style={styles.box2}></View>
+      <View style={styles.box2}>
+        <View style={styles.carUser}>
+          <Image 
+            style={styles.avatar} 
+            source={'https://github.com/renancavichi.png'}
+          />
+          <View style={styles.userDetails}>
+            <Text style={styles.name}>Renan Cavichi</Text>
+            <Text style={styles.email}>renancavichi@gmail.com</Text>
+          </View>
+        </View>
+        <View style={styles.carUser}>
+          <Image 
+            style={styles.avatar} 
+            source={'https://github.com/bianca.png'}
+          />
+          <View style={styles.userDetails}>
+            <Text style={styles.name}>Maria Silva</Text>
+            <Text style={styles.email}>mariasilva@gmail.com</Text>
+          </View>
+        </View>
+        <View style={styles.carUser}>
+          <Image 
+            style={styles.avatar} 
+            source={'https://github.com/robert.png'}
+          />
+          <View style={styles.userDetails}>
+            <Text style={styles.name}>John</Text>
+            <Text style={styles.email}>john@gmail.com</Text>
+          </View>
+        </View>
+      </View>
       <StatusBar style="auto" />
     </View>
   );
@@ -37,5 +68,32 @@ const styles = StyleSheet.create({
   logo:{
     width: 100,
     height: 100
+  },
+  carUser: {
+    backgroundColor: '#ffffff',
+    padding: 10,
+    borderRadius: 10,
+    width: '90%',
+    marginHorizontal: '5%',
+    marginTop: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 15
+  },
+  avatar: {
+    width: 80,
+    height: 80,
+    borderRadius: 40,
+  },
+  userDetails: {
+    gap: 5
+  },
+  name: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  email: {
+    fontSize: 18,
+    color: '#4f4f4f',
   }
 });

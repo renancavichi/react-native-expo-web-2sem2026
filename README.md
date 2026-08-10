@@ -9,7 +9,7 @@
 - O que é a biblioteca React Native?
 - O que é o framework Expo?
 - O StyleSheet do React Native tem todas as propriedades da Web?
-- Todos as propriedades do StyleSheet funcionam para iOS e Android?
+- Todos as propriedades do StyleSheet do React Native funcionam para iOS e Android?
 
 ### Instalação do Expo
 
