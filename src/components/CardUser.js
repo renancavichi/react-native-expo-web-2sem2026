@@ -8,8 +8,8 @@ export default function CardUser({ avatar, name, email }) {
                 source={avatar}
             />
             <View style={styles.userDetails}>
-            <Text style={styles.name}>{name}</Text>
-            <Text style={styles.email}>{email}</Text>
+                <Text style={styles.name}>{name}</Text>
+                <Text style={styles.email}>{email}</Text>
             </View>
         </View>
     )
