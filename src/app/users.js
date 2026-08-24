@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View, Image } from 'react-native'
-import CardUser from './components/CardUser'
+import CardUser from '../components/CardUser'
 
-export default function App() {
+export default function UsersScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.box}>
@@ -10,7 +10,7 @@ export default function App() {
           style={styles.logo} 
           source={'https://cdn.vectorstock.com/i/500p/66/46/justice-scales-logo-law-amp-legal-vector-27726646.jpg'}
         />
-        <Text>Meu App</Text>
+        <Text>Lista de Usuários</Text>
       </View>
       <View style={styles.box2}>
         <CardUser 
