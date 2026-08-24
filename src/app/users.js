@@ -1,8 +1,12 @@
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, Button } from 'react-native'
 import CardUser from '../components/CardUser'
+import { useRouter } from 'expo-router'
 
 export default function UsersScreen() {
+
+  const router = useRouter()
+
   return (
     <View style={styles.container}>
       <View style={styles.box}>
@@ -13,6 +17,9 @@ export default function UsersScreen() {
         <Text>Lista de Usuários</Text>
       </View>
       <View style={styles.box2}>
+
+        <Button title="Ir para Home" onPress={() => router.push('/')}/>
+
         <CardUser 
           avatar={'https://github.com/renancavichi.png'}
           name={'Renan Cavichi'}

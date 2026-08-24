@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image, Button } from 'react-native'
 import CardUser from '../components/CardUser'
+import { Link } from 'expo-router'
 
 export default function HomeScreen() {
   return (
@@ -13,6 +14,11 @@ export default function HomeScreen() {
         <Text>Home Teste</Text>
       </View>
       <View style={styles.box2}>
+
+        <Link href="/users">
+          <Button title="Ir para Usuários"/>
+        </Link>
+
         <CardUser 
           avatar={'https://github.com/renancavichi.png'}
           name={'Renan Cavichi'}
