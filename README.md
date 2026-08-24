@@ -15,7 +15,8 @@
 
 ### Instalação do Expo
 
-npx create-expo-app@latest --template
+```npx create-expo-app@latest --template```
+
     - Blank
     - nome do app
     - For learning with Expo Go (SDK 54)
