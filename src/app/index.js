@@ -1,64 +1,22 @@
-import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View, Image, Button } from 'react-native'
-import CardUser from '../components/CardUser'
-import { Link } from 'expo-router'
+import { Button, View, Text, StyleSheet } from "react-native"
+import { Link } from "expo-router"
 
-export default function HomeScreen() {
-  return (
-    <View style={styles.container}>
-      <View style={styles.box}>
-        <Image 
-          style={styles.logo} 
-          source={'https://cdn.vectorstock.com/i/500p/66/46/justice-scales-logo-law-amp-legal-vector-27726646.jpg'}
-        />
-        <Text>Home Teste</Text>
-      </View>
-      <View style={styles.box2}>
-
-        <Link href="/users">
-          <Button title="Ir para Usuários"/>
-        </Link>
-
-        <CardUser 
-          avatar={'https://github.com/renancavichi.png'}
-          name={'Renan Cavichi'}
-          email={'renancavichi@gmail.com'}
-        />
-        <CardUser 
-          avatar={'https://github.com/bianca.png'}
-          name={'Bianca'}
-          email={'bianca@gmail.com'}
-        />
-        <CardUser 
-          avatar={'https://github.com/robert.png'}
-          name={'Robert'}
-          email={'robert@gmail.com'}
-        />
-      </View>
-      <StatusBar style="auto" />
-    </View>
-  );
+export default function LoadingScreen() {
+    return (
+        <View style={styles.container}>
+            <Text>Loading</Text>
+            <Link href="/login">
+                <Button title="Login" />
+            </Link>
+        </View>
+    )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#6670f5',
-    flex: 1,
-  },
-  box:{
-    flex: 1,
-    backgroundColor: '#f9e895',
-    padding: 20,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 20
-  },
-  box2:{
-    flex: 5,
-    backgroundColor: '#5bd54e',
-  },
-  logo:{
-    width: 100,
-    height: 100
-  }
-});
+    container: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        gap: 20
+    }
+})
