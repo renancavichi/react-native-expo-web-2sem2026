@@ -4,6 +4,8 @@ import FontAwesome from '@expo/vector-icons/FontAwesome'
 export default function TabsLayout() {
     return (
         <Tabs screenOptions={{
+            // Mais opções de configuração podem ser adicionadas aqui
+            // https://reactnavigation.org/docs/bottom-tab-navigator#options
             headerShown: false,
             tabBarActiveTintColor: "#f36715",
             tabBarInactiveTintColor: "#c2c2c2",
