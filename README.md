@@ -12,7 +12,6 @@
 - Todos as propriedades do StyleSheet do React Native funcionam para iOS e Android?
 - Quais as principais formas de navegação com Expo Router? 
 
-
 ### Instalação do Expo
 
 ```npx create-expo-app@latest --template```
