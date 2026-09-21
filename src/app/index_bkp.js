@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar'
-import { StyleSheet, Text, View, Image, Button } from 'react-native'
+import { StyleSheet, Text, View, Button } from 'react-native'
 import CardUser from '../components/CardUser'
 import { Link } from 'expo-router'
+import { Image } from 'expo-image'
 
 export default function HomeScreen() {
   return (
