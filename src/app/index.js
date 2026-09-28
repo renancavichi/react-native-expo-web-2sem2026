@@ -1,5 +1,4 @@
-import { Button, View, Text, StyleSheet, ActivityIndicator } from "react-native"
-import { Link } from "expo-router"
+import { View, Text, StyleSheet, ActivityIndicator} from "react-native"
 import { Image } from "expo-image"
 import { useEffect } from 'react'
 import { useRouter } from "expo-router"
@@ -20,9 +19,6 @@ export default function LoadingScreen() {
             <Text>IFFLIX</Text>
             <ActivityIndicator size="large" color="#000000"/>
             <Text>Carregando...</Text>
-            <Link href="/login">
-                <Button title="Login" />
-            </Link>
         </View>
     )
 }

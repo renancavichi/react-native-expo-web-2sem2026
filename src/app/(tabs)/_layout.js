@@ -1,5 +1,7 @@
+import { StyleSheet } from "react-native"
 import {Tabs} from "expo-router"
 import FontAwesome from '@expo/vector-icons/FontAwesome'
+import { BlurView } from 'expo-blur'
 
 export default function TabsLayout() {
     return (
@@ -10,6 +12,10 @@ export default function TabsLayout() {
             tabBarActiveTintColor: "#f36715",
             tabBarInactiveTintColor: "#c2c2c2",
             tabBarIconStyle: { marginBottom: -3 },
+            tabBarStyle: { position: 'absolute' },
+            tabBarBackground: () => (
+                <BlurView tint="light" intensity={30} style={StyleSheet.absoluteFill} />
+            )
         }}>
             <Tabs.Screen 
                 name="home" 
