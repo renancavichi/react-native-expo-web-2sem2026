@@ -1,12 +1,19 @@
-import { Button, View, Text, StyleSheet } from "react-native";
-import { useRouter } from "expo-router";
+import { Button, View, Text, StyleSheet } from "react-native"
+import { useRouter } from "expo-router"
+import AsyncStorage from "@react-native-async-storage/async-storage"
 
 export default function ProfileScreen() {
     const router = useRouter()
+
+    const handleLogout = async () => {
+        await AsyncStorage.removeItem("token")
+        router.navigate("/login")
+    }
+
     return (
         <View style={styles.container}>
             <Text>Perfil</Text>
-            <Button title="Sair" onPress={() => router.navigate("/login")} />
+            <Button title="Sair" onPress={handleLogout} />
         </View>
     )
 }

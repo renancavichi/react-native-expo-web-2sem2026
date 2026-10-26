@@ -14,11 +14,17 @@
 - Quais as principais formas de navegação com Expo Router?
 - Posso utilizar mais de uma forma de navegação do Expo Router no mesmo App?
 - Quais as principais vantagens de utilizar o componente Imagem do Expo ao invés do React Native?
+- Para que serve o AsyncStorage?
+- Qual os tipos de valores são aceitos pelo AsyncStorage?
+- Quais as operações básicas do AsyncStorage?
+- O AsyncStorage é uma função assincrona?
 
-----
-
+---- Parte 2 - Avaliação 2
 
 - AsyncStorage
+
+------
+
 - Scroll View x FlatList
 - Zustand
 - CRUD
