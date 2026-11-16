@@ -24,10 +24,12 @@
 - Qual a diferença da View para a ScrollView?
 - Qual a diferença do ScrollView para o FlatList? Quando devo usar cada um deles?
 - Quais as 3 propriedades principais do FlatList?
+- O que é o Zustand?
+- Qual a diferença de um store (Estados globais) para um useState?
+- O Zustand substitui o AsyncStorage? Porque?
+- Que tipo de variável posso salvar no Zustand?
 
 ------
-
-- Zustand (Atualizar no ECAD)
 
 AVALIÇÕES:
 

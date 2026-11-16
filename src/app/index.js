@@ -3,14 +3,19 @@ import { Image } from "expo-image"
 import { useEffect } from 'react'
 import { useRouter } from "expo-router"
 import AsyncStorage from "@react-native-async-storage/async-storage"
+import {useProfileStore} from "../stores/profileStore.js"
 
 export default function LoadingScreen() {
     const router = useRouter();
+    const {setProfile} = useProfileStore();
 
     useEffect(() => {
         const checkLogin = async () => {
             const token = await AsyncStorage.getItem("token")
+            const name = await AsyncStorage.getItem("nome")
+            const avatar = await AsyncStorage.getItem("avatar")
             if (token) {
+                setProfile(name, avatar)
                 router.replace('/home')
             } else {
                 router.replace('/login')

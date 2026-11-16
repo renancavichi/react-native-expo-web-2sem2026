@@ -1,13 +1,18 @@
 import { Button, View, Text, StyleSheet, ScrollView } from "react-native";
 import { Link } from "expo-router";
+import {useProfileStore} from "../../stores/profileStore.js"
+import {Image} from "expo-image"
 
 export default function HomeScreen() {
+    const {name, avatar} = useProfileStore()
     return (
         <ScrollView style={styles.container}>
             <Text>Home</Text>
             <Link href="/profile">
                 <Button title="Perfil" />
             </Link>
+            <Text>Nome: {name}</Text>
+            <Image source={avatar} style={{width: 50, height: 50, borderRadius: 25}} />
             <Text>API
 To blur the background of a view on Android, wrap the content to be blurred in a BlurTargetView component and pass its ref to the BlurView. You can see an example in the Usage section.
 
